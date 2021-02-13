@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="UTF-8">
+    <!--    <title>Title</title>-->
+    <title>reveal.js - Layout Helpers</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="../css_boots/bootstrap.min.css">
+    <link rel="stylesheet" href="myown_css.css">
+
+    <style>
+
+
+
+        .myborder{
+            border: 1px red solid;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section id=shouye class="h-100">
+
+            <nav class="navbar mb-5 bg-light">
+                <div class="navbar-brand">
+                    <img  src="logo/logo4.png" alt="" class="d-inline-block">
+                    <img src="logo/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+                </div>
+                <img src="right.png" class="text-left" alt="">
+            </nav>
+
+            <card>
+                <img src="dibu.png" alt="" class="card-img">
+                <div class="card-img-overlay">
+                    <span class="display-1 d-block text-capitalize">A flexible optical simulator based on CUDA and Numba</span>
+                    <span class="h1 mt-5 d-block">Huazhi lun</span>
+                    <span class="h1 mt-5 d-block"> 2020-8-20</span>
+
+                </div>
+            </card>
+
+        </section>
+
+        <section class="h-100 myborder">
+
+            <nav class="navbar bg-light sections" data-auto-animate-target="unmatched">
+                <div class="navbar-brand" data-auto-animate-target="unmatched">
+                    <img data-auto-animate-target="unmatched" src="../logo4.png" alt="" class="d-inline-block">
+                    <img data-auto-animate-target="unmatched" src="logo/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+                    <span class="section_title ml-3">Base Dir structure of the simulator</span>
+                </div>
+                <img src="right.png" class="text-left" alt="">
+            </nav>
+
+            <div class="container-fluid" style="height: 90%">
+
+                <div class="row h-100 align-items-center">
+                    <div class="col text-left myborder">
+                        <ul class="font_times" style="font-size: 36px;margin:0 0;">
+                            <li class="fragment">The first</li>
+                            <span class="fragment" style="margin: 0 0;padding: 0 0;">
+                                <li class="fragment highlight-red">The first</li>
+                            </span>
+                            <li class="fragment">The first</li>
+                            <li class="fragment">The first</li>
+                        </ul>
+                    </div>
+                    <div class="col myborder">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="../plugin/math/math.js"></script>
+
+<script src="../dist/reveal.js"></script>
+<script src="../plugin/highlight/highlight.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script>
+    Reveal.initialize({
+        width:1920,
+        height:1080,
+
+        math: {
+            mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+            config: 'TeX-AMS_HTML-full',
+            // pass other options into `MathJax.Hub.Config()`
+            TeX: {Macros: {RR: "{\\bf R}"}}
+        },
+        disableLayout: false,
+        center:false,
+        margin:0,
+        autoAnimateUnmatched: false,
+        plugins: [RevealHighlight, RevealMath]
+    });
+</script>
+
+
+</body>
+</html>
