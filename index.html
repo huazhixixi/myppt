@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/mycss.css">
+
+		<style>
+			.myborder{
+				border:3px dashed green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div  class="slides">
+				<section id="shouye" >
+					<nav class="navbar bg-light p-0">
+						<div class="navbar-brand">
+							<img  src="figure/logo4.png" alt="" class="d-inline-block">
+							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+						</div>
+						<img src="figure/right.png" class="text-left" alt="">
+					</nav>
+
+					<card>
+						<img src="figure/dibu.png" alt="" class="card-img">
+						<div class="card-img-overlay">
+							<span class="display-1 d-block text-capitalize text-center">A flexible optical simulator based on CUDA and Numba</span>
+							<span class="h1 mt-5 d-block text-center">Huazhi lun</span>
+							<span class="h1 mt-5 d-block text-center"> 2020-8-20</span>
+
+						</div>
+					</card>
+				</section>
+
+				<section>
+					<nav class="navbar bg-light p-0">
+						<div class="navbar-brand">
+							<img  src="figure/logo4.png" alt="" class="d-inline-block">
+							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+						</div>
+						<img src="figure/right.png" class="text-left" alt="">
+					</nav>
+
+					<div class="container-fluid">
+						<div class="row h-100 align-items-center" >
+							<div class="col section_body">
+								<span>This is a column</span>
+							</div>
+
+							<div class="col ">
+								This is a column too
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width:1920,
+				height:1080,
+				center:false,
+				margin: 0,
+				autoAnimateUnmatched: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
