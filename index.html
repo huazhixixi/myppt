@@ -27,13 +27,14 @@
 			<div  class="slides">
 				<section id="shouye" >
 					<nav class="navbar bg-light p-0">
-						<div class="navbar-brand">
+						<div class="navbar-brand d-flex align-items-center">
 							<img  src="figure/logo4.png" alt="" class="d-inline-block">
 							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+<!--							<p class="d-inline-block section_biaoti text-capitalize">The basic Dir <span class="text-lowercase">of</span> the simulator</p>-->
 						</div>
+
 						<img src="figure/right.png" class="text-left" alt="">
 					</nav>
-
 					<card>
 						<img src="figure/dibu.png" alt="" class="card-img">
 						<div class="card-img-overlay">
@@ -47,26 +48,216 @@
 
 				<section>
 					<nav class="navbar bg-light p-0">
-						<div class="navbar-brand">
+						<div class="navbar-brand d-flex align-items-center">
 							<img  src="figure/logo4.png" alt="" class="d-inline-block">
 							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+							<p class="d-inline-block section_biaoti text-capitalize">The basic Dir <span class="text-lowercase">of</span> the simulator</p>
 						</div>
+
 						<img src="figure/right.png" class="text-left" alt="">
 					</nav>
 
-					<div class="container-fluid myborder">
+					<div class="container-fluid">
 						<div class="row h-100 align-items-center" >
-							<div class="col section_body">
-								<span>This is a column</span>
-							</div>
+							<div class="col">
+								<div class="card border-info fragment" >
+									<img src="figure/simulator/tree.png" alt="" class="card-img-top">
+									<div class="card-body">
+										<ul class=" list-unstyled text-left section_body list-group list-group-flush">
+											<li class="list-group-item">channel</li>
+											<li class="list-group-item">core</li>
+											<li class="list-group-item">device_manager</li>
+											<li class="list-group-item">tranciever</li>
+											<li class="list-group-item">utilities.py</li>
 
-							<div class="col ">
-								This is a column too
+
+										</ul>
+									</div>
+									<div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col">
+								<ul class="list-unstyled section_body" style="line-height: 1.2">
+									<li class="text-left">
+										<span class="fragment" style="font-weight: bold">channel:</span>
+										<ul class=" list-group list-group-flush ml-5 mt-2">
+											<li class="list-group-item fragment">fiber.py:定义了非线性光纤，用分布傅里叶实现</li>
+											<li class="list-group-item fragment">EDFA.py:定义了恒增益EDFA和恒功率EDFA两种类型的EDFA</li>
+											<li class="list-group-item fragment">ROADM.py: 定义了WSS函数，具体原理参照附录，理论背景</li>
+											<li class="list-group-item fragment">impairments.py： 定义了一些线性损伤，例如PDL，PMD,ROP等</li>
+										</ul>
+									</li>
+
+									<li class="text-left">
+										<span style="font-weight: bold" class="fragment">core:</span>
+										<ul class="list-group list-group-flush  ml-5 mt-2">
+											<li class="list-group-item fragment">Signal.py:定义了基本的信号类;基类为Signal，其余两个类QamSignal和WdmSignal都继承自基类</li>
+											<li class="list-group-item fragment">constl.py:实现了Qam符号的映射</li>
+
+										</ul>
+									</li>
+
+
+									<li class="text-left">
+										<span class="fragment" style="font-weight: bold">device_manager:</span>
+
+										<ul class="list-group list-group-flush fragment  ml-5 mt-2">
+											<li class="list-group-item">device.py:主要实现了CUDA设备和CPU设备的自动转换，通过装饰器 device-selection 实现</li>
+<!--											<li class="list-group-item">constl.py:实现了Qam符号的映射</li>-->
+										</ul>
+									</li>
+
+								</ul>
 							</div>
 						</div>
-
 					</div>
+				</section>
 
+				<section>
+					<nav class="navbar bg-light p-0">
+						<div class="navbar-brand d-flex align-items-center">
+							<img  src="figure/logo4.png" alt="" class="d-inline-block">
+							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+							<p class="d-inline-block section_biaoti text-capitalize">The basic Dir <span class="text-lowercase">of</span> the simulator</p>
+						</div>
+
+						<img src="figure/right.png" class="text-left" alt="">
+					</nav>
+
+					<div class="container-fluid">
+						<div class="row h-100 align-items-center text-left">
+							<div class="col">
+								<div class="card border-info" >
+									<img src="figure/simulator/tree.png" alt="" class="card-img-top">
+									<div class="card-body">
+										<ul class=" list-unstyled text-left section_body list-group list-group-flush">
+											<li class="list-group-item">channel</li>
+											<li class="list-group-item">core</li>
+											<li class="list-group-item">device_manager</li>
+											<li class="list-group-item">tranciever</li>
+
+											<li class="list-group-item">utilities.py</li>
+
+
+										</ul>
+									</div>
+									<div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col align-self-start h-100" style="position: relative">
+
+								<div class="wrapper" style="height: 90.9%;position: relative">
+
+									<span class="section_body d-block" style="font-weight: bold;margin-top: 9.5%">tranciever:</span>
+									<ul class="list-group   section_body list-group-flush">
+										<li class="list-group-item">
+											dsp.py:实现了收发端的DSP函数
+										</li>
+										<li class="list-group-item border-bottom">
+											instruments.py:实现了部分器件，ADC,DAC,Laser等
+										</li>
+									</ul>
+									<h1 class="section_body  text-center mb-0" style="position: absolute;top:50%;left:50%;font-weight: bold;transform: translate(-50%,-50%)">
+										以下详细介绍每个部分的API
+									</h1>
+
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<nav class="navbar bg-light p-0">
+						<div class="navbar-brand d-flex align-items-center">
+							<img  src="figure/logo4.png" alt="" class="d-inline-block">
+							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
+							<p class="d-inline-block section_biaoti">The core dir</p>
+						</div>
+
+						<img src="figure/right.png" class="text-left" alt="">
+					</nav>
+
+					<div class="container-fluid ">
+						<div class="row h-100 align-items-center">
+							<div class="col text-left">
+
+<!--								<span class="section_body_chn">目前只实现了 <span class="section_body">QamSignal</span> </span>-->
+								<h1 class="section_body_chn  p-0 font-weight-bold fragment">初始化流程 1</h1>
+								 <ol class="section_body text-justify" style="margin-left: 5%">
+									 <li class="fragment">根据传入的SignalSetting 设置信号的相关属性，包括 symbol_rate, symbol_number (仿真的符号点的个数)，qam_order, pol_number (2 为偏振复用)
+										 ，会自动生成随机序列，并映射为QAM符号
+									 </li>
+									 <li class="fragment">
+										 调用Signal类的构造函数，将产生的samples 赋值给self，并根据SignalSetting.device 的值，自动选择CPU或者CUDA设备
+									 </li>
+								 </ol>
+								<h1 class="section_body mt-3 p-0 font-weight-bold fragment">上述流程完成后，会生成QamSignal对象，并有以下属性和方法:</h1>
+
+								<h1 class="section_body mt-3 p-0 font-weight-bold fragment">属性</h1>
+								<ol class="section_body list-group text-justify" style="margin-left: 5%">
+									<li class="fragment">sybmol_rate [Baud]</li>
+									<li class="fragment">center_freq [Hz] 中心频率</li>
+									<li class="fragment">sps:samples per symbol</li>
+									<li class="fragment">symbol:QAM 符号</li>
+									<li class="fragment">samples:对符号上采样sps之后的ndarray</li>
+								</ol>
+
+							</div>
+							<div class="col   h-100 position-relative">
+								<pre class="mb-0 fragment " style="margin-top:6.6%"><code class=" text-left python" data-trim
+																														style="line-height: 1.5"
+																		>
+										def to(self,device)->None:
+
+											'''
+									         根据device的值，将samples移动到合适的设备上
+											'''
+
+										def dtype(self)->ndarray.dtype:
+
+											'''
+									         返回samples的数组类型
+
+											'''
+										def normalize(self)->self:
+
+											'''
+									         将每个偏振的功率规一化到1
+											'''
+										def power(self)->float:
+
+									         '''
+									          以w为单位返回信号的总功率
+									         '''
+										@property
+										def shape(self):
+											return self.samples.shape
+
+										def float(self)->self:
+
+									        '''
+											convert complex128 to complex64
+									        '''
+										@property
+										def fs(self):
+											return self.symbol_rate * self.sps
+							  </code></pre>
+
+
+								<div class="wrapper fragment d-flex justify-content-center align-items-center" style="height: 18.7%">
+									<h1 class="mb-0 section_body font-weight-bold font-italic"> Next: SignalSetting and Example</h1>
+								</div>
+
+							</div>
+						</div>
+					</div>
 				</section>
 
 			</div>
