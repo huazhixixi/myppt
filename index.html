@@ -27,7 +27,7 @@
 			<div  class="slides">
 				<section id="shouye" >
 					<nav class="navbar bg-light p-0">
-						<div class="navbar-brand d-flex align-items-center">
+						<div class="navbar-brand d-flex align-items-center p-0 m-0">
 							<img  src="figure/logo4.png" alt="" class="d-inline-block">
 							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
 <!--							<p class="d-inline-block section_biaoti text-capitalize">The basic Dir <span class="text-lowercase">of</span> the simulator</p>-->
@@ -48,7 +48,7 @@
 
 				<section>
 					<nav class="navbar bg-light p-0">
-						<div class="navbar-brand d-flex align-items-center">
+						<div class="navbar-brand d-flex align-items-center p-0 m-0">
 							<img  src="figure/logo4.png" alt="" class="d-inline-block">
 							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
 							<p class="d-inline-block section_biaoti text-capitalize">The basic Dir <span class="text-lowercase">of</span> the simulator</p>
@@ -60,7 +60,7 @@
 					<div class="container-fluid">
 						<div class="row h-100 align-items-center" >
 							<div class="col">
-								<div class="card border-info fragment" >
+								<div class="card border-info" >
 									<img src="figure/simulator/tree.png" alt="" class="card-img-top">
 									<div class="card-body">
 										<ul class=" list-unstyled text-left section_body list-group list-group-flush">
@@ -68,14 +68,14 @@
 											<li class="list-group-item">core</li>
 											<li class="list-group-item">device_manager</li>
 											<li class="list-group-item">tranciever</li>
+
 											<li class="list-group-item">utilities.py</li>
-
-
 										</ul>
 									</div>
 									<div>
 									</div>
 								</div>
+
 
 							</div>
 							<div class="col">
@@ -83,8 +83,8 @@
 									<li class="text-left">
 										<span class="fragment" style="font-weight: bold">channel:</span>
 										<ul class=" list-group list-group-flush ml-5 mt-2">
-											<li class="list-group-item fragment">fiber.py:定义了非线性光纤，用分布傅里叶实现</li>
-											<li class="list-group-item fragment">EDFA.py:定义了恒增益EDFA和恒功率EDFA两种类型的EDFA</li>
+											<li class="list-group-item fragment" >fiber.py:定义了非线性光纤，用分布傅里叶实现</li>
+											<li class="list-group-item fragment" >EDFA.py:定义了恒增益EDFA和恒功率EDFA两种类型的EDFA</li>
 											<li class="list-group-item fragment">ROADM.py: 定义了WSS函数，具体原理参照附录，理论背景</li>
 											<li class="list-group-item fragment">impairments.py： 定义了一些线性损伤，例如PDL，PMD,ROP等</li>
 										</ul>
@@ -117,7 +117,7 @@
 
 				<section>
 					<nav class="navbar bg-light p-0">
-						<div class="navbar-brand d-flex align-items-center">
+						<div class="navbar-brand d-flex align-items-center p-0 m-0">
 							<img  src="figure/logo4.png" alt="" class="d-inline-block">
 							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
 							<p class="d-inline-block section_biaoti text-capitalize">The basic Dir <span class="text-lowercase">of</span> the simulator</p>
@@ -127,7 +127,7 @@
 					</nav>
 
 					<div class="container-fluid">
-						<div class="row h-100 align-items-center text-left">
+						<div class="row h-100 align-items-center">
 							<div class="col">
 								<div class="card border-info" >
 									<img src="figure/simulator/tree.png" alt="" class="card-img-top">
@@ -139,8 +139,6 @@
 											<li class="list-group-item">tranciever</li>
 
 											<li class="list-group-item">utilities.py</li>
-
-
 										</ul>
 									</div>
 									<div>
@@ -148,26 +146,24 @@
 								</div>
 
 							</div>
-							<div class="col align-self-start h-100" style="position: relative">
-
-								<div class="wrapper" style="height: 90.9%;position: relative">
-
-									<span class="section_body d-block" style="font-weight: bold;margin-top: 9.5%">tranciever:</span>
-									<ul class="list-group   section_body list-group-flush">
-										<li class="list-group-item">
-											dsp.py:实现了收发端的DSP函数
-										</li>
-										<li class="list-group-item border-bottom">
-											instruments.py:实现了部分器件，ADC,DAC,Laser等
-										</li>
-									</ul>
-									<h1 class="section_body  text-center mb-0" style="position: absolute;top:50%;left:50%;font-weight: bold;transform: translate(-50%,-50%)">
+							<div class="col align-self-start h-100 text-left">
+						
+								<span class="section_body d-block" style="font-weight: bold;margin-top: 4%">tranciever:</span>
+								<ul class="list-group   section_body list-group-flush">
+									<li class="list-group-item">
+										dsp.py:实现了收发端的DSP函数
+									</li>
+									<li class="list-group-item border-bottom">
+										instruments.py:实现了部分器件，ADC,DAC,Laser等
+									</li>
+								</ul>
+								<div class="wrapper m-0 align-items-center d-flex justify-content-center" style="height: 74.7%;">
+									<h1 class="section_body m-0 font-weight-bold" >
 										以下详细介绍每个部分的API
 									</h1>
-
-
+	
 								</div>
-
+								
 							</div>
 						</div>
 					</div>
@@ -175,7 +171,7 @@
 
 				<section>
 					<nav class="navbar bg-light p-0">
-						<div class="navbar-brand d-flex align-items-center">
+						<div class="navbar-brand d-flex align-items-center p-0 m-0">
 							<img  src="figure/logo4.png" alt="" class="d-inline-block">
 							<img src="figure/wenzi.png" width="200" height="auto" alt="" class=" d-inline-block" >
 							<p class="d-inline-block section_biaoti">The core dir</p>
@@ -212,7 +208,7 @@
 							</div>
 							<div class="col   h-100 position-relative">
 								<pre class="mb-0 fragment " style="margin-top:6.6%"><code class=" text-left python" data-trim
-																														style="line-height: 1.5"
+																														style="line-height: 1.5;"
 																		>
 										def to(self,device)->None:
 
